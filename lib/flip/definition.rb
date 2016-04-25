@@ -11,11 +11,14 @@ module Flip
     end
 
     alias :name :key
-    alias :to_s :key
 
     def description
       options[:description]
     end
 
+    def to_s
+      @key.to_s
+    end
+    
   end
 end
